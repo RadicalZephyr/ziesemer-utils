@@ -75,7 +75,7 @@ public class URLEncoder
 				}
 				out.put((char)b);
 			}else{
-				out.put('$');
+				out.put('%');
 				out.put(HEX_CHARS[(b >> 4) & 0xF]);
 				out.put(HEX_CHARS[b & 0xF]);
 			}
