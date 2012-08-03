@@ -4,7 +4,7 @@
 		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.ziesemer</groupId>
+	<groupId>com.ziesemer.utils</groupId>
 	<artifactId>utils</artifactId>
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
@@ -28,7 +28,7 @@
 				<version>1.0.6</version>
 			</dependency>
 			<dependency>
-				<groupId>com.ziesemer</groupId>
+				<groupId>com.ziesemer.utils</groupId>
 				<artifactId>junit</artifactId>
 				<version>1.0.0</version>
 			</dependency>
