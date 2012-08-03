@@ -18,20 +18,20 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.ziesemer.utils</groupId>
-			<artifactId>com.ziesemer.utils.junit</artifactId>
+			<groupId>com.ziesemer</groupId>
+			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.ziesemer.utils</groupId>
-			<artifactId>com.ziesemer.utils.io</artifactId>
-			<version>2011.08.05</version>
+			<groupId>com.ziesemer</groupId>
+			<artifactId>io</artifactId>
+			<version>1.0.0</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.ziesemer.utils</groupId>
-			<artifactId>com.ziesemer.utils.io</artifactId>
-			<version>2011.08.05</version>
+			<groupId>com.ziesemer</groupId>
+			<artifactId>io</artifactId>
+			<version>1.0.0</version>
 			<type>test-jar</type>
 			<scope>test</scope>
 		</dependency>
