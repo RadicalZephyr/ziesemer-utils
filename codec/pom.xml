@@ -1,0 +1,59 @@
+<project
+		xmlns="http://maven.apache.org/POM/4.0.0"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.ziesemer</groupId>
+		<artifactId>utils</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<name>Codec</name>
+	<artifactId>codec</artifactId>
+	<packaging>jar</packaging>
+
+	<inceptionYear>2009</inceptionYear>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.ziesemer.utils</groupId>
+			<artifactId>com.ziesemer.utils.junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.ziesemer.utils</groupId>
+			<artifactId>com.ziesemer.utils.io</artifactId>
+			<version>2011.08.05</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.ziesemer.utils</groupId>
+			<artifactId>com.ziesemer.utils.io</artifactId>
+			<version>2011.08.05</version>
+			<type>test-jar</type>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<test>com.ziesemer.utils.codec.AllTests</test>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

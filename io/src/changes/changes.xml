@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document
+		xmlns="http://maven.apache.org/changes/1.0.0"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/xsd/changes-1.0.0.xsd">
+	<body>
+		<release version="2011.08.24" date="2011-08-24">
+			<action dev="ziesemer" type="fix">
+				Fix issue in AppendableWriter.write(char[], int, int) due to lack of translation between its
+off/len positions, and Appendable.append's start/end positions.  Related JUnit test added.
+			</action>
+			<action dev="ziesemer" type="add">
+				Add logback-test.xml to tests.
+			</action>
+		</release>
+		<release version="2011.08.05" date="2011-08-05">
+			<action dev="ziesemer" type="add">
+				Using parent Maven POM for project build configuration, including JUnit extensions from MarkUtils-JUnit.
+			</action>
+			<action dev="ziesemer" type="update">
+				Updated / additional Javadocs.
+			</action>
+		</release>
+		<release version="2010.01.29" date="2010-01-29" description="Initial release.">
+		</release>
+	</body>
+</document>

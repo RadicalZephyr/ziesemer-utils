@@ -1,0 +1,27 @@
+<configuration>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<!-- http://logback.qos.ch/manual/layouts.html#PatternLayout -->
+			<Pattern>%d [%t] %-5p %c - %m %ex%n</Pattern>
+		</encoder>
+	</appender>
+	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+		<append>false</append>
+		<encoder>
+			<!-- http://logback.qos.ch/manual/layouts.html#PatternLayout -->
+			<pattern>%d [%t] %-5p %c %X - %m%n</pattern>
+		</encoder>
+		<file>target/JUnit/test.log</file>
+	</appender>
+	<appender name="WATCHER" class="com.ziesemer.utils.junit.TestLogWatcherAppender"/>
+	
+	<root>
+		<level value="WARN"/>
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="FILE"/>
+		<appender-ref ref="WATCHER"/>
+	</root>
+	<logger name="com.ziesemer.utils.io">
+		<level value="INFO"/>
+	</logger>
+</configuration>
