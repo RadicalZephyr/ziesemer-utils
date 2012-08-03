@@ -111,11 +111,11 @@ public abstract class BaseCharCoderTest extends BaseTest{
 				}
 				@Override
 				public String getEncodedTest(){
-					return "%00%01+%21*%2B-.%2F09%3DAZ_az%FF";
+					return "$00$01+$21*$2B-.$2F09$3DAZ_az$FF";
 				}
 				@Override
 				public String getShortEncodedTest(){
-					return "%FF";
+					return "$FF";
 				}
 			}}
 		});

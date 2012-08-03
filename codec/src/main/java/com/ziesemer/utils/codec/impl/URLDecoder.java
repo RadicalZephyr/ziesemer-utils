@@ -36,7 +36,7 @@ public class URLDecoder
 			
 			int mark = in.position();
 			final char c = in.get();
-			if(c == '%'){
+			if(c == '$'){
 				if(in.remaining() >= 2){
 					int x, y;
 					if((x = Character.digit(in.get(), 0x10)) == -1
@@ -47,7 +47,7 @@ public class URLDecoder
 					}
 					out.put((byte)((x << 4) + y));
 				}else{
-					// Push back the '%', and wait for more.
+					// Push back the '$', and wait for more.
 					in.position(in.position() - 1);
 					return CoderResult.UNDERFLOW;
 				}
